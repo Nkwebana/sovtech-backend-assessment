@@ -1,9 +1,9 @@
-interface Greeting {
-  name: String;
-}
+import { handlePeopleResolver } from './people-resolver';
+import { handlePersonResolver } from './person-resolver';
 
 export const resolvers = {
   Query: {
-    hello: (parents: any, args: Greeting): String => `Hello there ${args.name}`,
+    getPeople: handlePeopleResolver,
+    getPerson: handlePersonResolver,
   },
 };

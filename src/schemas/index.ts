@@ -10,7 +10,7 @@ export const typeDefs = gql`
   }
 
   type Query {
-    getPeople: [PersonDetails]
+    getPeople(pageNumber: Int): [PersonDetails]
     getPerson(name: String): [PersonDetails]
   }
 `;

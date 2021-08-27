@@ -1,5 +1,9 @@
 import { handleGetPeopleClient } from '../../clients';
 
-export async function handlePeopleResolver() {
-  return await handleGetPeopleClient();
+interface PageNumber {
+  pageNumber: number;
+}
+
+export async function handlePeopleResolver(_: any, args: PageNumber) {
+  return await handleGetPeopleClient(args.pageNumber);
 }

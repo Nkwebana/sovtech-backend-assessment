@@ -4,8 +4,12 @@ export const typeDefs = gql`
   type HomeWorld {
     name: String
     rotation_period: String
-    terrain: String
+    orbital_period: String
+    diameter: String
     climate: String
+    gravity: String
+    terrain: String
+    surface_water: String
     population: String
   }
 

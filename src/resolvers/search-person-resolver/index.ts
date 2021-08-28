@@ -1,5 +1,4 @@
 import { handleSearchPersonClient } from '../../clients';
-
 interface PersonName {
   name: string;
 }

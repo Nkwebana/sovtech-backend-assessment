@@ -1,5 +1,4 @@
 import { handleGetPeopleClient } from '../../clients';
-
 interface PageNumber {
   pageNumber: number;
 }

@@ -1,10 +1,10 @@
-import handleGetPeopleClient from './people-client';
-import handleGetPersonClient from './person-client';
-import handleGetPersonHomeWorldClient from './home-world-client';
+import handleGetPeopleClient from './get-people-client';
+import handleSearchPersonClient from './search-person-client';
+import handleGetPersonHomeWorldClient from './get-home-world-client';
 ('./home-world-client');
 
 export {
   handleGetPeopleClient,
-  handleGetPersonClient,
+  handleSearchPersonClient,
   handleGetPersonHomeWorldClient,
 };

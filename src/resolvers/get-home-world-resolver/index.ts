@@ -4,6 +4,6 @@ interface HomeWorldURL {
   homeworld: string;
 }
 
-export async function handleHomeWorldResolver(person: HomeWorldURL) {
+export async function handleGetHomeWorldResolver(person: HomeWorldURL) {
   return await handleGetPersonHomeWorldClient(person.homeworld);
 }

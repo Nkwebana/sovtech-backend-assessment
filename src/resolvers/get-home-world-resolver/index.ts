@@ -1,5 +1,4 @@
 import { handleGetPersonHomeWorldClient } from '../../clients';
-
 interface HomeWorldURL {
   homeworld: string;
 }

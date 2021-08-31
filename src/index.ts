@@ -5,8 +5,8 @@ import { typeDefs } from './schemas';
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
-server.listen(8080, () => {
-  console.log(
-    'Running a GraphQL server at http://localhost:8080' + server.graphqlPath
-  );
+const PORT = process.env.PORT || 8080;
+
+server.listen(PORT, () => {
+  console.log('Listening on port: ', PORT);
 });

@@ -3,8 +3,8 @@ import { PEOPLE_URL } from '../constants';
 
 export default async function handleSearchPersonClient(name: string) {
   const {
-    data: { results },
+    data: { results, count },
   } = await handleApiCall(`${PEOPLE_URL}?search=${name}`);
 
-  return results;
+  return { results, count };
 }

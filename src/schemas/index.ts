@@ -21,8 +21,13 @@ export const typeDefs = gql`
     homeworld: HomeWorld
   }
 
+  type PayloadResultCount {
+    results: [PersonDetails]
+    count: Int
+  }
+
   type Query {
-    getPeople(pageNumber: Int): [PersonDetails]
-    searchPerson(name: String): [PersonDetails]
+    getPeople(pageNumber: Int): PayloadResultCount
+    searchPerson(name: String): PayloadResultCount
   }
 `;

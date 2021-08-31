@@ -5,8 +5,8 @@ export default async function handleGetPeopleClient(pageNumber: number) {
   const pagination = `?page=${pageNumber}`;
 
   const {
-    data: { results },
+    data: { results, count },
   } = await handleApiCall(`${PEOPLE_URL}${pageNumber ? pagination : ''}`);
 
-  return results;
+  return { results, count };
 }

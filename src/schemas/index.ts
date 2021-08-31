@@ -28,6 +28,6 @@ export const typeDefs = gql`
 
   type Query {
     getPeople(pageNumber: Int): PayloadResultCount
-    searchPerson(name: String): PayloadResultCount
+    searchPerson(name: String, pageNumber: Int): PayloadResultCount
   }
 `;
